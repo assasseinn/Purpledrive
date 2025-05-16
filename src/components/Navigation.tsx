@@ -23,9 +23,8 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="PurpleDrive Logo" width={40} height={40} className="w-10 h-10" />
-            <span className="font-heading text-2xl font-bold text-neutral-900 tracking-tight">PURPLE<br/>DRIVE</span>
+          <Link href="/" className="flex items-center">
+            <Image src="/logo.png" alt="PurpleDrive Logo" width={177} height={80} priority />
           </Link>
 
           {/* Desktop Navigation */}
