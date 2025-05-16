@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-lg font-medium 
+           hover:bg-primary-dark transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-secondary text-white rounded-lg font-medium 
+           hover:bg-secondary-dark transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-6
+           hover:shadow-xl transition-shadow duration-200;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 rounded-lg border border-neutral-300 
+           focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent
+           dark:bg-neutral-800 dark:border-neutral-700;
+  }
+} 
